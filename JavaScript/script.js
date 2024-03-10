@@ -1,10 +1,17 @@
+let arrM = ["M", "I", "B"];
 const mainBox = document.getElementById("mainBox")
 const bar = document.getElementById("sideBar")
 
 bar.addEventListener("mouseenter", () => {
-    mainBox.style.gridTemplateColumns = "250px 1fr"
+    bar.style.width = "250px"
 })
 
 bar.addEventListener("mouseleave", () => {
-    mainBox.style.gridTemplateColumns = "50px 1fr"
+    bar.style.width = "50px"
 })
+
+for (let i = 0; i < arrM.length; i++) {
+    var elm = document.createElement("div")
+    elm.innerHTML = arrM[i]
+    bar.appendChild(elm)
+}
