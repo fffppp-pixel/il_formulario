@@ -8,26 +8,30 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: minmax(65px, 10%) 1fr;
     grid-template-columns: 100%;
 }
 
 #title  {
     width: 100%;
     height: 100%;
-    text-align: center;
-    background-color: #f00;
+    display: grid;
+    place-items: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: #262626;
 }
 
-#nav {
-    overflow-y: scroll;
+#mainBox {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(20%, 999);
+    grid-template-rows: 100%;
+    grid-template-columns: 50px 1fr;
+    transition: all 0.3s;
 }
 
-.nav-item {
-    height: 50px;
+#sideBar {
+    background: #343434;
 }

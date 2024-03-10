@@ -1,10 +1,10 @@
-const nav = document.getElementById("nav")
+const mainBox = document.getElementById("mainBox")
+const bar = document.getElementById("sideBar")
 
-let arr = ["link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3","link1", "link2", "link3",]
+bar.addEventListener("mouseenter", () => {
+    mainBox.style.gridTemplateColumns = "60% 1fr"
+})
 
-for (let i = 0; i < arr.length; i++) {
-    let elm = document.createElement("div")
-    elm.innerHTML = arr[i]
-    elm.classList.add("nav-item")
-    nav.appendChild(elm)
-}
+bar.addEventListener("mouseleave", () => {
+    mainBox.style.gridTemplateColumns = "50px 1fr"
+})
