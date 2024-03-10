@@ -1,8 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 100%;
+}
+
 #title  {
-    width: 85%;
-    padding: 25px;
-    margin: 25px;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    background-color: rgb(255, 8, 0);
+    background-color: #f00;
+}
+
+#nav {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(20%, 999);
+}
+
+.nav-item {
     height: 50px;
 }
